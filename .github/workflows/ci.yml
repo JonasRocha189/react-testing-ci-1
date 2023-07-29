@@ -35,11 +35,11 @@ jobs:
       - name: Build the app 🏗
         run: |
           cd my-app
-          npm run react-scripts build
+          npx run build
       - name: Run component tests 🔸
         run: |
           cd my-app
-          npm run react-scripts test
+          npx run test
       - name: Start the app 📤
         run: |
           cd my-app
