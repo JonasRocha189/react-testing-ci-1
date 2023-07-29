@@ -1,0 +1,50 @@
+1 - Estruturar o projeto e a pipeline (CI)
+
+npm init -y
+npm i create-react-app
+npx create-react-app my-app
+cd my-app
+npm start
+
+- rodar testes 
+npm test / enter
+
+- criar git ignore na raiz e adicionar o node_modules
+
+- subir no github
+- criar Actions, procurar por Node
+
+- na raiz do projeto, criar pasta .gitbuh/workflows arquivo ci.yml
+- copiar o arquivo ci do github actions
+
+agora quando dar push ou pull-request, será executado o pipeline
+
+
+2 - Criar testes
+
+- alterar para pegar o elemento pelo testeID (getByTestId) e adicionar ao elemento o data-testid
+
+- testar responsividade do site (mobile e desktop)
+npm install @wdio/cli
+
+- configurar
+npx wdio config 
+
+--- Web or Mobile
+--- In the Cloud using Sauce Labs
+--- us
+--- Mocha
+--- No (webdriver)
+--- chrome
+---- yes to install 
+
+- criar arquivo test/specs/visual.spec.js
+--- adicionar o test
+--- no arquivo wdio.config.js adicionar duas constantes
+--- add script de test:visual no package.json
+-- obs antes de rodar o comando do test, precisa o projeto estar rodando em outro terminal
+
+
+
+
+
